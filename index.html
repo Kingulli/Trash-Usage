@@ -5,6 +5,21 @@
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <h1>This is a test</h1>
+        <h1>Week 1</h1>
+        <div class="trash_items">
+            <img class="trash_images" id="1_walnut_10.1" src="trash_images/1_walnut_10.1.png" alt="10.1 Walnut Bag Top" onclick="myFunction()">
+            <div class="popup" onclick="myFunction()">
+                <span class="popuptextbox" id="myPopup">Popup text...</span>
+            </div>
+              <script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+            <img class="trash_images" id="2_maine-note_10.1" src="trash_images/2_maine-note_10.1.png" alt="10.1 Maine Note">
+            <img class="trash_images" id="69_mini-bagel-bag_10.8" src="trash_images/69_mini-bagel-bag_10.8.png" alt="10.8 Mini Bagel Bag">
+        </div>
     </body>
 </html>
