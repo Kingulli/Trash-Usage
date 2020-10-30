@@ -8,18 +8,19 @@
         <h1>Week 1</h1>
         <div class="trash_items_scroll_window">
         <div class="trash_items">
-            <img class="trash_images" id="1_walnut_10.1" src="trash_images/1_walnut_10.1.png" alt="10.1 Walnut Bag Top" onclick="myFunction()">
-            <div class="popup" onclick="myFunction()">
-                <div class="popuptextbox" id="myPopup_1">
-                    <h2>Walnut Bag Strip</h2>
-                </div>
+        <div class="popup">
+            <!-- <div class="popuptextbox" id="myPopup_1"> -->
+                <p id=close>x</p>
+                <h2>Walnut Bag Strip</h2>
+            <!-- </div> -->
             </div>
+            <img class="trash_images" id="1_walnut_10.1" src="trash_images/1_walnut_10.1.png" alt="10.1 Walnut Bag Top">
             <img class="trash_images" id="t2_maine-note_10-1" src="trash_images/2_maine-note_10.1.png" alt="10.1 Maine Note">
-            <div class="popup" onclick="myFunction()">
+            <!-- <div class="popup">
                 <div class="popuptextbox" id="myPopup_2">
                     <h2>Maine Note</h2>
                 </div>
-            </div>
+            </div> -->
             <img class="trash_images" id="t3_rosemary-sea-salt_10-1" src="trash_images/3_rosemary-sea-salt_10.1.png" alt="10.1 Rosemary Sea Salt">
             <img class="trash_images" id="t4_napkin_10-1" src="trash_images/4_napkin_10.1.png" alt="10.1 Napkin">
             <img class="trash_images" id="t5_paper-scraps_10-1" src="trash_images/5_paper-scraps_10.1.png" alt="10.1 Paper Scraps">
@@ -34,22 +35,32 @@
         </div>
         </div>
         <script>
-            document.getElementById("myPopup_1").addEventListener("click", function myFunction(){
-                document.getElementsByName("h2").innerHTML = "Hello World"});
-            document.getElementById("myPopup_2").addEventListener("click", myFunction());
 
-            // function myFunction(){
-            //     var popup = document.getElementByClassName("popuptextbox");
-            //     popup.classList.toggle("show");
-            // }
-            // When the user clicks on <div>, open the popup
-            // var popup = document.getElementById("myPopup_1");
-            // function myFunction() {
-            //     popup.classList.toggle("show");
-            // }
-            // myFunction();
-            // popup = document.getElementById("myPopup_2"); myFunction();
-            // myFunction("myPopup_2");
+            var data = {"10.1 Walnut Bag Top":{"height": 10, "width": 20, "color": "blue"}, "10.1 Maine Note": {"height": 5, "width":10, "color":"red"}};
+            // data["walnut"]["height"]
+
+            function myFunc(event){
+                console.log(event);
+                console.log(event.target.alt)
+                console.log(data[event.target.alt]);
+                console.log(data[event.target.alt]["height"]);
+                document.getElementsByTagName("h2")[0].innerHTML = event.target.alt;  
+            }
+
+            document.getElementById("close").addEventListener("click", function(){
+                document.getElementsByClassName("popup").style.display="none";
+                // popup.classList.toggle("show");
+                });
+            // document.getElementById("myPopup_2").addEventListener("click", myFunction());
+            var images = document.getElementsByClassName("trash_images");
+            for(let i = 0; i < images.length; ++i){
+                images[i].addEventListener("click", function(event){
+                    myFunc(event);
+                    // document.getElementsByClassName("popup")[0].style.display="show";
+                    document.getElementsByClassName("popup")[0].setAttribute("class", "popup show");
+                })
+            }
+
         </script>
     </body>
 </html>
