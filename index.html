@@ -10,19 +10,32 @@
         <div class="trash_items">
         <div class="popup">
                 <p id=close>x</p>
-                <h2 id="itemTitle"></h2>
-                <h4 id="itemDate"></h4>
-                <h4 id="itemLength"></h4>
-                <h4 id="itemWidth"></h4>
-                <h4 id="itemHeight"></h4>
-                <h4 id="itemDisposal"></h4>
-                <h4 id="itemMaterial"></h4>
-                <p id="itemStory"></p>
+                <div id="header">
+                    <h2 id="itemTitle">Item Title</h2>
+                    <h4 id="itemDate">Item Date</h4>
+                </div>  
+                <div id="content">
+                    <h4 id="itemDisposal">Disposal Type</h4>
+                    <h5 id="disposalType">Disposal Type</h5>
+                    <div id="itemDimensions">
+                        <h4 class="dimensions" id="itemLength">0 in</h4>
+                        <h5 id="length">Length</h5>
+                        <h4 class="dimensions" id="itemWidth">0 in</h4>
+                        <h5 id="width">Width</h5>
+                        <h4 class="dimensions"id="itemHeight">0 in</h4>
+                        <h5 id="height">Height</h5>
+                    </div>
+                    <h4 id="itemMaterial">Item Material</h4>
+                    <h5 id="material">Material</h5>
+                    <hr>
+                    <h3 id="story">Story</h3>
+                    <p id="itemStory">Click on different objects to see their description and facts.</p>
+                </div>
             </div>
 
             <!-- OCTOBER 8TH -->
             <img class="trash_images" id="c1_oatmealPacket_10-8" src="collection_week/c1_oatmealPacket.png" alt="Oatmeal Packet">
-            <img class="trash_images" id="c2_bagelBag_10-8" src="collection_week/c2_bagelBag.png" alt="Bagel Bag">
+            <!-- <img class="trash_images" id="c2_bagelBag_10-8" src="collection_week/c2_bagelBag.png" alt="Bagel Bag"> -->
             <img class="trash_images" id="c3_bagelBagClip_10-8" src="collection_week/c3_bagelBagClip.png" alt="Bagel Bag Clip">
             <img class="trash_images" id="c4_catFoodLid_10-8" src="collection_week/c4_catFoodLid.png" alt="Cat Food Lid" height="100">
             <img class="trash_images" id="c5_catFoodContainer_10-8" src="collection_week/c5_catFoodContainer.png" alt="Cat Food Container" height="100">
@@ -182,7 +195,7 @@
             "Animal Waste Bag Roll": {"date": o14, "length": "2.5 in", "width": ".5 in", "height": ".5 in", "disposal": r, "material": c, "story": "leila's poops smell so gross"},
              };
 
-             
+
             // data["walnut"]["height"]
 
             function myFunc(event){
