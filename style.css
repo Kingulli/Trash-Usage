@@ -3,10 +3,25 @@ body{
     min-width: max-content;
 }
 h1{
-    color:white;
+    color:#C4C4C4;
     position: fixed;
     margin:40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 28pt;
     z-index: 2;
+    text-transform: uppercase;
+    top:20px;
+    left:20px;
+}
+hr{
+  width:40vw;
+    position: fixed;
+    /* right:10px; */
+    top:120px;
+    left: 45px;
+    border: .1px solid #C4C4C4;
+    
 }
 h4{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -130,12 +145,13 @@ h5{
     margin-left:75px;
     top: 60px;
   }
-  hr{
+  #endOfFacts{
     width:300px;
     position: relative;
     /* right:10px; */
     top:10px;
     border: .1px solid white;
+    left:5px;
   }
   p{
     position: relative;
