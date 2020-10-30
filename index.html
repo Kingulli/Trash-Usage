@@ -6,20 +6,50 @@
     </head>
     <body>
         <h1>Week 1</h1>
+        <div class="trash_items_scroll_window">
         <div class="trash_items">
             <img class="trash_images" id="1_walnut_10.1" src="trash_images/1_walnut_10.1.png" alt="10.1 Walnut Bag Top" onclick="myFunction()">
             <div class="popup" onclick="myFunction()">
-                <span class="popuptextbox" id="myPopup">Popup text...</span>
+                <div class="popuptextbox" id="myPopup_1">
+                    <h2>Walnut Bag Strip</h2>
+                </div>
             </div>
-              <script>
-// When the user clicks on <div>, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
-            <img class="trash_images" id="2_maine-note_10.1" src="trash_images/2_maine-note_10.1.png" alt="10.1 Maine Note">
-            <img class="trash_images" id="69_mini-bagel-bag_10.8" src="trash_images/69_mini-bagel-bag_10.8.png" alt="10.8 Mini Bagel Bag">
+            <img class="trash_images" id="t2_maine-note_10-1" src="trash_images/2_maine-note_10.1.png" alt="10.1 Maine Note">
+            <div class="popup" onclick="myFunction()">
+                <div class="popuptextbox" id="myPopup_2">
+                    <h2>Maine Note</h2>
+                </div>
+            </div>
+            <img class="trash_images" id="t3_rosemary-sea-salt_10-1" src="trash_images/3_rosemary-sea-salt_10.1.png" alt="10.1 Rosemary Sea Salt">
+            <img class="trash_images" id="t4_napkin_10-1" src="trash_images/4_napkin_10.1.png" alt="10.1 Napkin">
+            <img class="trash_images" id="t5_paper-scraps_10-1" src="trash_images/5_paper-scraps_10.1.png" alt="10.1 Paper Scraps">
+            <img class="trash_images" id="t6_oatmeal-packet_10-2" src="trash_images/6_oatmeal-packet_10.2.png" alt="10.2 Oatmeal Packet">
+            <img class="trash_images" id="t7_paper-towel_10-2" src="trash_images/7_paper-towel_10.2.png" alt="10.2 Paper Towel">
+            <img class="trash_images" id="t8_paper-towel_10-2" src="trash_images/8_paper-towel_10.2.png" alt="10.2 Paper Towel">
+            <img class="trash_images" id="t9_up-mint_10-2" src="trash_images/9_up-mint_10.2.png" alt="10.2 UP mint">
+            <img class="trash_images" id="t10_up-recipt_10-2" src="trash_images/10_up-recipt_10.2.png" alt="10.2 UP recipt">
+            <img class="trash_images" id="t11_grocery-list_10-2" src="trash_images/11_grocery-list_10.2.png" alt="10.2 Grocery List">
+            <!-- <img class="trash_images" id="" src="trash_images" alt=""> -->
+            <!-- <img class="trash_images" id="69_mini-bagel-bag_10.8" src="trash_images/69_mini-bagel-bag_10.8.png" alt="10.8 Mini Bagel Bag"> -->
         </div>
+        </div>
+        <script>
+            document.getElementById("myPopup_1").addEventListener("click", function myFunction(){
+                document.getElementsByName("h2").innerHTML = "Hello World"});
+            document.getElementById("myPopup_2").addEventListener("click", myFunction());
+
+            // function myFunction(){
+            //     var popup = document.getElementByClassName("popuptextbox");
+            //     popup.classList.toggle("show");
+            // }
+            // When the user clicks on <div>, open the popup
+            // var popup = document.getElementById("myPopup_1");
+            // function myFunction() {
+            //     popup.classList.toggle("show");
+            // }
+            // myFunction();
+            // popup = document.getElementById("myPopup_2"); myFunction();
+            // myFunction("myPopup_2");
+        </script>
     </body>
 </html>

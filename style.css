@@ -1,27 +1,33 @@
 body{
     background-color: #323232;
     min-width: max-content;
-    /* width: 10000px; */
 }
 h1{
     color:white;
+    position: fixed;
+    margin:40px;
+    z-index: 2;
+}
+.trash_items_scroll_window{
+  position:relative;
+  width:100vw;
+  height: 90vh;
+  margin: auto;
 }
 .trash_items{
-    position: relative;    
-    min-width: max-content;
-    width:100%;
-    margin: -10px;
-    height:90vh;
-    /* background-color: red; */
-    /* bottom:50%; */
+  min-width: max-content;
+  position:absolute;
+  top: 10vh; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  width: 100vw; height: 50vh;
 }
 .trash_images{
-    position: relative;
-    width:200px;
+    height:20em;
     float:left;
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
 }
-
 
 
 /* Popup container - can be anything you want */
@@ -34,17 +40,17 @@ h1{
   /* The actual popup */
   .popup .popuptextbox{
     visibility: hidden;
-    width: 160px;
+    width: 500px;
+    height:100vw;
     background-color: #555;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 8px 0;
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
+    right:0px;
+    top:0px;
   }
   
 
