@@ -75,7 +75,7 @@ h5{
   /* The actual popup */
    .popup{
     width: 450px;
-    height:100vw;
+    height:100vh;
     background-color: #C4C4C4;
     color: #fff;
     text-align: center;
