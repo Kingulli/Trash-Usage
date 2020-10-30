@@ -166,5 +166,11 @@ h5{
     top: 60px;
     line-height: 1.5rem;
   }
+  @media (min-width: 400px) and (max-width: 1100px) {
+    #itemTitle{
+        width:300px;
+        font-size: 18pt;
+    }
+  }
 
   
